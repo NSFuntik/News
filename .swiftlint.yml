@@ -1,0 +1,79 @@
+# .swiftlint.yml
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - private_outlet
+  - unneeded_parentheses_in_closure_argument
+
+analyzer_rules:
+  - explicit_self
+
+line_length:
+  warning: 120
+  error: 200
+  ignores_urls: true
+  ignores_function_declarations: false
+  ignores_comments: true
+
+file_length:
+  warning: 500
+  error: 1200
+
+function_body_length:
+  warning: 40
+  error: 100
+
+type_body_length:
+  warning: 250
+  error: 350
+
+identifier_name:
+  min_length:
+    warning: 2
+    error: 1
+  max_length:
+    warning: 40
+    error: 60
+  excluded:
+    - id
+    - URL
+    - url
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+
+nesting:
+  type_level:
+    warning: 3
+    error: 5
+  function_level:
+    warning: 5
+    error: 10
+
+trailing_comma:
+  mandatory_comma: true
+
+private_over_fileprivate:
+  validate_extensions: true
+
+force_cast: warning
+force_try: warning
+
+vertical_whitespace:
+  max_empty_lines: 2
+
+comment_spacing: warning
+
+# Специфические правила для этого файла
+custom_rules:
+  rss_logger_availability:
+    name: "RSSLogger Availability"
+    regex: "@available\\(macOS 12\\.0, iOS 14\\.0, watchOS 7\\.0, tvOS 14\\.0, \\*\\)"
+    message: "Ensure availability annotation matches project deployment targets"
+    severity: warning

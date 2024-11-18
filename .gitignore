@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.xcworkspace
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.moved-aside
+DerivedData/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+Package.pins
+
+# Logs and Temporary Files
+*.log
+.logs/
+*.tmp
+buildServer.json
+
+# IDE Specific
+.idea/
+.vscode/
+*.iml
+
+# Testing
+*.gcda
+*.gcno
+*.profraw
+symbolEmbeddingsCache.plist
+
+# Scripts
+scripts/*.tmp
+
+# Misc
+Icon\r
+.env
