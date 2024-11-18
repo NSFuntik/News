@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Test RSS Feed</title>
+        <link>https://example.com</link>
+        <description>Test RSS feed for date formats</description>
+        <item>
+            <title>RFC822 Date</title>
+            <link>https://example.com/1</link>
+            <guid>1</guid>
+            <pubDate>Mon, 17 Nov 2024 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title>ISO8601 Date</title>
+            <link>https://example.com/2</link>
+            <guid>2</guid>
+            <pubDate>2024-11-17T12:00:00Z</pubDate>
+        </item>
+        <item>
+            <title>Alternative Format</title>
+            <link>https://example.com/3</link>
+            <guid>3</guid>
+            <pubDate>2024-11-17 12:00:00</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>RSS Feed with Malformed Enclosures</title>
+        <link>https://example.com</link>
+        <description>This RSS feed includes malformed media enclosures.</description>
+        <item>
+            <guid>151617</guid>
+            <title>Test Title 7</title>
+            <description>Test Description 7</description>
+            <link>https://example.com/7</link>
+            <pubDate>Wed, 06 Nov 2024 12:00:00 +0000</pubDate>
+            <!-- Missing 'url' and 'length' attributes -->
+            <enclosure type="audio/mpeg" />
+        </item>
+    </channel>
+</rss>

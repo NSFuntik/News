@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>RSS Feed with Malformed PubDate</title>
+        <link>https://example.com</link>
+        <description>This RSS feed includes items with malformed publication dates.</description>
+        <item>
+            <guid>192021</guid>
+            <title>Test Title 8</title>
+            <description>Test Description 8</description>
+            <link>https://example.com/8</link>
+            <pubDate>Invalid Date Format</pubDate>
+        </item>
+    </channel>
+</rss>
