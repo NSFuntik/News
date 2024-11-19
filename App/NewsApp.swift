@@ -5,16 +5,25 @@
 //  Created by Dmitry Mikhailov on 10.11.2024.
 //
 
+import NewsFeature
 import SwiftUI
 
 @main
 struct NewsApp: App {
-  let persistenceController = PersistenceController.shared
+  // Создаем экземпляр координатора как источник истины для навигации
+  @StateObject private var coordinator: FeatureCoordinator = .main
+
+  // Инициализация зависимостей приложения
+  init() {
+    DI.Container.setupNewsFeature()
+  }
 
   var body: some Scene {
     WindowGroup {
-      ContentView()
-        .environment(\.managedObjectContext, persistenceController.container.viewContext)
+      // Используем NewsCoordinator для навигации
+
+      coordinator.view(for: .newsList)
+        .environmentObject(coordinator)
     }
   }
 }

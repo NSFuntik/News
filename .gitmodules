@@ -1,0 +1,9 @@
+[submodule "Packages/SwiftModernArchitecture"]
+	path = Packages/SwiftModernArchitecture
+	url = https://github.com/NSFuntik/SwiftModernArchitecture.git
+	branch = main
+
+[submodule "Packages/SwiftToolkit"]
+	path = Packages/SwiftToolkit
+	url = https://github.com/NSFuntik/SwiftToolkit.git
+	branch = main

@@ -5,7 +5,7 @@
 //  Created by NSFuntik on 11/18/24.
 //
 
-import Domain
+import RSSDomain
 import Foundation
 import OSLog
 

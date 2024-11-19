@@ -12,22 +12,22 @@ let package = Package(
   products: [
     .library(
       name: "RSSParser",
-      targets: ["Data", "Domain"]
+      targets: ["RSSData"]
     ),
   ],
   targets: [
     .target(
-      name: "Domain",
+      name: "RSSDomain",
       path: "Sources/Domain"
     ),
     .target(
-      name: "Data",
-      dependencies: ["Domain"],
+      name: "RSSData",
+      dependencies: ["RSSDomain"],
       path: "Sources/Data"
     ),
     .testTarget(
-      name: "Tests",
-      dependencies: ["Data", "Domain"],
+      name: "RSSTests",
+      dependencies: ["RSSData", "RSSDomain"],
       path: "Tests",
       resources: [
         .process("Resources")

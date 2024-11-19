@@ -3,8 +3,8 @@
 //
 //  Created by NSFuntik on 11/18/24.
 //
-@testable import Data
-@testable import Domain
+@testable import RSSData
+@testable import RSSDomain
 import Foundation
 import XCTest
 

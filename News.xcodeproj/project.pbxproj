@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F5E584DB2CEC2CBE0064DE36 /* NewsFeature in Frameworks */ = {isa = PBXBuildFile; productRef = F5E584DA2CEC2CBE0064DE36 /* NewsFeature */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F576D06D2CE0A00F004E6C0B /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -15,6 +19,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				RSSParser,
+				SwiftModernArchitecture,
+				SwiftToolkit,
 			);
 			target = F576D06C2CE0A00F004E6C0B /* News */;
 		};
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E584DB2CEC2CBE0064DE36 /* NewsFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,7 @@
 			children = (
 				F5EBF0912CEA608D001941F6 /* Packages */,
 				F576D06F2CE0A00F004E6C0B /* App */,
+				F5E584D92CEC2CBE0064DE36 /* Frameworks */,
 				F576D06E2CE0A00F004E6C0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +70,13 @@
 				F576D06D2CE0A00F004E6C0B /* News.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F5E584D92CEC2CBE0064DE36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +93,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F5E584D82CEC2C490064DE36 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F576D06F2CE0A00F004E6C0B /* App */,
@@ -85,6 +101,7 @@
 			);
 			name = News;
 			packageProductDependencies = (
+				F5E584DA2CEC2CBE0064DE36 /* NewsFeature */,
 			);
 			productName = News;
 			productReference = F576D06D2CE0A00F004E6C0B /* News.app */;
@@ -115,7 +132,6 @@
 			mainGroup = F576D0642CE0A00F004E6C0B;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				F5EBF08F2CEA554A001941F6 /* XCRemoteSwiftPackageReference "SwiftToolkit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F576D06E2CE0A00F004E6C0B /* Products */;
@@ -146,6 +162,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5E584D82CEC2C490064DE36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F5E584D72CEC2C490064DE36 /* NewsFeature */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F576D07E2CE0A010004E6C0B /* Debug */ = {
@@ -288,6 +311,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Packages/SwiftToolkit/.build/debug",
+					"$(PROJECT_DIR)/Packages/SwiftToolkit/.build/arm64-apple-macosx/debug",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.nsfuntik.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,6 +348,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Packages/SwiftToolkit/.build/debug",
+					"$(PROJECT_DIR)/Packages/SwiftToolkit/.build/arm64-apple-macosx/debug",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.nsfuntik.News;
@@ -356,16 +389,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		F5EBF08F2CEA554A001941F6 /* XCRemoteSwiftPackageReference "SwiftToolkit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/NSFuntik/SwiftToolkit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
+/* Begin XCSwiftPackageProductDependency section */
+		F5E584D72CEC2C490064DE36 /* NewsFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewsFeature;
 		};
-/* End XCRemoteSwiftPackageReference section */
+		F5E584DA2CEC2CBE0064DE36 /* NewsFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewsFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F576D0652CE0A00F004E6C0B /* Project object */;
 }

@@ -5,7 +5,7 @@
 //  Created by NSFuntik on 11/18/24.
 //
 
-@testable import Domain
+@testable import RSSDomain
 import Foundation
 import XCTest
 
